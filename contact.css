@@ -1,0 +1,141 @@
+*{
+    font-family: sans-serif;
+  }
+  body{
+      background-color: black;
+      margin:0; 
+         
+  }
+  .contact-footer{
+    color:azure;
+    text-align: center;
+    position: fixed ;
+    margin-top: 8vh;
+    width: 100%;
+    clear: both;
+  }
+  /*Navigation bar*/
+header{
+    display: flex;
+    justify-content: space-between;  
+  }
+  .left-nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 10px;
+  
+  }
+  .right-nav{
+    margin-right: 50px;
+  }
+  .right-nav ul{
+    display: flex;
+    margin-right: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+    
+  
+  }
+  
+  .right-nav ul li a{
+   
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  /*Contact page*/
+.main-contact{
+    display: flex;
+    color: azure;
+    font-size: 1.2rem;
+
+}
+.main-contact h1{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.main-contact .right-contact{
+    margin-left: 5%;
+    width: 100%;
+    margin-right: 70px;
+    text-align: center;
+}
+.main-contact .left-contact{
+margin-left: 5%;
+width: 100%;
+text-align: center;
+}
+.main-contact .line{
+border-left: 6px solid #D9D9D9;
+height: 470px;
+position: absolute;
+left: 50%;
+margin-left: -15px;
+top: 100px;
+
+} 
+
+
+
+.main-contact .input-box input {
+    outline: none;
+    width:50%;
+    min-height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    
+}
+
+.main-contact .message-box textarea {
+    outline: none;
+    width: 50%;
+    min-height: 140px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    
+}
+
+.main-contact .right-contact textarea:focus {
+    outline: none;
+    border-color: #6689B1;
+    border-radius: 2px;
+    border-width: 2px;
+}
+.main-contact .right-contact .input-box input:focus {
+    outline: none;
+    border-color: #6689B1;
+    border-radius: 2px;
+    border-width: 2px;
+}
+.main-contact .right-contact .submit input{
+    background-color: #6689B1;
+    color:azure;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    width:20%;
+    min-height: 40px;
+    margin-top: 1%;
+    border: blue;
+}
+.main-contact .right-contact .submit input:hover{
+    background-color: blue;
+    color: red;
+}
+.main-contact .right-contact ::placeholder{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+@media only screen and (min-width: 250px){
+}
+
+
+
+

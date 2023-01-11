@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif;
+  }
+body{
+    background-color: black;
+    margin: 0;
+    
+}
+.login-footer{
+color:azure;
+text-align: center;
+position: fixed ;
+margin-top: 38vh;
+width: 100%;
+clear: both;
+}
+/*Navigation bar*/
+header{
+    display: flex;
+    justify-content: space-between;  
+}
+.left-nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.right-nav{
+    margin-right: 50px;
+}
+.right-nav ul{
+    display: flex;
+    margin-right: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+    
+
+}
+
+.right-nav ul li a{
+   
+    text-decoration: none;
+    list-style: none;
+    color: azure;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*Login*/
+.login-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: azure;
+}
+.login-main .submit{
+    padding-left: 50px;
+    min-height: 30px;
+}
+.login-main .auth input {
+    outline: none;
+    width:100%;
+    min-height: 30px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    
+}
+.login-main .auth ::placeholder{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.login-main .log-sign a {
+    color: #6689B1;
+    padding-left: 10px;
+}
+.login-main .log-sign{
+    align-items: center;
+    justify-content: center;
+}
+.login-main .auth input:focus {
+    outline: none;
+    border-color: #6689B1;
+    border-radius: 2px;
+    border-width: 2px;
+}
+.login-main .submit input{
+        background-color: #6689B1;
+        color:azure;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 30px;
+        width:70%;
+        min-height: 40px;
+        margin-top: 1%;
+        border: blue;
+} 
+.login-main .submit input:hover{
+    background-color: blue;
+    color: red;
+}
+
