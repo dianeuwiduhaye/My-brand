@@ -1,0 +1,116 @@
+*{
+    font-family: sans-serif;
+  }
+body{
+    background-color:black;
+    margin: 0;
+    color:azure;
+    
+}
+.manageblogs-footer{
+color:azure;
+text-align: center;
+position: fixed ;
+margin-top: 20vh;
+width: 100%;
+clear: both;
+}
+/*Navigation bar*/
+header{
+    display: flex;
+    justify-content: space-between;  
+}
+.left-nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.right-nav{
+    margin-right: 50px;
+}
+.right-nav ul{
+    display: flex;
+    margin-right: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+    
+
+}
+
+.right-nav ul li a{
+   
+    text-decoration: none;
+    list-style: none;
+    color:azure;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*manageblogs*/
+.main-mablogs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.add-new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.delete{
+    margin-left: 10px;
+}
+.delete ul{
+    list-style: none;
+    text-decoration: none;
+}
+.delete ul li{
+    margin-top:50px;
+}
+.delete ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5rem;
+}
+.delete .plus{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.edit{
+    margin-right: 100px;
+    margin-top: 110px;
+}
+.edit ul{
+    list-style: none;
+    text-decoration: none;
+}
+.edit ul li{
+    margin-top: 50px;
+
+}
+.edit ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5rem;
+}
+.blog-list{
+    margin-top: 180px;
+}
+.blog-list p{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #6689B1;
+
+}
+.blog-list small a{
+    text-decoration: none;
+    color:#6689B1 ;
+}
+

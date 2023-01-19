@@ -121,6 +121,10 @@ header{
   background: linear-gradient(to bottom, #ef473a, #cb2d3e);
     color: azure;
   }
+  .card__body button a{
+    text-decoration: none;
+    color:black
+  }
   .card__body h4 {
     font-size: 1.4rem;
     text-transform: capitalize;
@@ -137,7 +141,6 @@ header{
   .card__body button:hover{
     background-color: #56CCF2;
     color: azure;
-
   }
 
   

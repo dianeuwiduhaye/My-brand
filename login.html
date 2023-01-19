@@ -5,17 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IF=edge">
         <meta name ="viewport" content="width">
         <title>My Brand</title>
-        <link rel="stylesheet" href="/login.css">
+        <link rel="stylesheet" href="/My-brand/login.css">
+        <script>
+        </script>
         
     </head>
     <body>
         <header>
             <div class="left-nav">
-                <img src="/assets/avatar.jpeg" alt="My avatar" />
+                <img src="/My-brand/assets/avatar.jpeg" alt="My avatar" />
               </div>
             <div class="right-nav">
                   <ul>
-                    <li><a href="index.html"> Home </a></li> 
+                    <li id="head"><a href="index.html"> Home </a></li> 
                     <li><a href="about.html">About</a></li> 
                     <li><a href="education.html"> Education</a></li> 
                     <li><a href="contact.html">Contacts</a></li> 
@@ -27,16 +29,16 @@
 
         </header>
         <div class="login-main">
-            <p class="log-sign">Have an account already?<a href="/login.html"> Sign In!</a></p>
+            <p class="log-sign">Have an account already?<a href="login.html"> Sign In!</a></p>
             <form>
                 <div class="auth">
                <input type="text" id="username" name="username" placeholder="Full name" required><br><br>
                <input type="password" id="password" name="password" placeholder="Password" required><br><br>
                </div>
                <div class="submit">
-                <input type="submit" value="Login"><br>
+                <input onclick="window.location.href='dashboard.html'" type="submit" value="Login"><br>
                </div>
-               <p class="log-sign">New account?<a href="/signup.html">Sign Up!</a></p>
+               <p class="log-sign">New account?<a href="signup.html">Sign Up!</a></p>
                
             </form>
         
@@ -44,6 +46,7 @@
         <footer class="login-footer">
             &COPY;2022 By DianeUwiduhaye
         </footer>
+        <script></script>
 
     </body>
 </html>

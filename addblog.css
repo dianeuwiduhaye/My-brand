@@ -1,0 +1,85 @@
+*{
+    font-family: sans-serif;
+  }
+body{
+    background-color:black;
+    margin: 0;
+    color:azure;
+    
+}
+.manageblogs-footer{
+color:azure;
+text-align: center;
+position: fixed ;
+margin-top: 20vh;
+width: 100%;
+clear: both;
+}
+/*Navigation bar*/
+header{
+    display: flex;
+    justify-content: space-between;  
+}
+.left-nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.right-nav{
+    margin-right: 50px;
+}
+.right-nav ul{
+    display: flex;
+    margin-right: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+    
+
+}
+
+.right-nav ul li a{
+   
+    text-decoration: none;
+    list-style: none;
+    color:azure;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*Add blog*/
+.main-addblog{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.blog-image{
+    width:300px;
+    height:290px;
+    background-color: azure;
+    margin-top: 70px;
+}
+.blog-body input{
+    width:90%;
+    height: 30px;
+    margin-left: 25px;
+    background-color: azure;
+}
+.blog-body textarea{
+    background-color: azure;
+
+}
+.blog-body .submit-blog input{
+    background-color: #6689B1;
+    color: azure;
+    font-weight: bold;
+}
+.blog-body .submit-blog input:hover{
+    color: red;
+    background-color: blue;
+
+}
