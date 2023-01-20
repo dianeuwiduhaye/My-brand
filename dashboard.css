@@ -48,6 +48,9 @@
       font-size: 1rem;
       font-weight: bold;
     }
+    .right-nav ul li a:hover{
+      text-decoration: underline;
+  }
     /* Dashboard page*/
     .sidebar{
         display: flex;
@@ -73,6 +76,7 @@
     }
     .sidebar ul li{
         padding-top: 80px;
+        list-style-type: none;
 
     }
     .page-content h1{

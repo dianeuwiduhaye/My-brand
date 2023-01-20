@@ -31,46 +31,170 @@
             </div>
 
         </header>
-        <div class="main-mablogs">
-            <h1>Manage Blogs</h1>
+        <div class="page-content">
+            <h1>Posts</h1>
+        </div>
+        <hr>
+        <div class="message success">
+            <ion-icon name="checkmark-circle" class="message-icon"></ion-icon>
+            <span>This is a sample message</span>
+        </div>
+        <form action="post" class="featured-post-form">
+            <strong>Featured post:</strong>
+            <span class="title-wrapper ">
+                <span>This is a sample post tittle</span>
+                <button type="button" class="change-featured-post">Change</button>
 
-            <div class="blog-list">
-                <p>Blog title</p>
-                <small>mm,dd,yyyy</small>
-                <p>Blog title</p>
-                <small>mm,dd,yyyy</small>
-                <p>Blog title</p>
-                <small>mm,dd,yyyy</small>
-                <p>Blog title</p>
-                <small>mm,dd,yyyy</small><br><br>
-                <small><a href="">Load more...</a> </small>
-                </div>
-            <div class="add-new">
-                <div class="edit">
-                    <ul>
-                        <li><a href="#"> Edit <ion-icon name="pencil-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Edit <ion-icon name="pencil-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Edit <ion-icon name="pencil-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Edit <ion-icon name="pencil-sharp"></ion-icon></a></li>
-                    </ul>
+            </span>
+            <span class="input-wrapper hide">
+                <input type="text" name="tittle" class="input-control input-control-sm" placeholder="Enter post title...">
+                <button type="submit" class="btn btn-primary">Update</button>
 
-                </div>
-                <div class="delete">
-                    <ul>
-                        <li class="plus"><a href="addblog.html"> Add new <ion-icon name="add-circle-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Delete <ion-icon name="trash-bin-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Delete <ion-icon name="trash-bin-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Delete <ion-icon name="trash-bin-sharp"></ion-icon></a></li>
-                        <li><a href="#"> Delete <ion-icon name="trash-bin-sharp"></ion-icon></a></li>
-                    </ul>
-
-                </div>
+            </span>
+        </form>
+        <div class="table-actions">
+            <div class="table-filter-group">
+                <input type="text" name="search-item" id="search-post-input" placeholder="Search">
+                <select name="filter-post" id="filter-posts">
+                    <option value="ALL">---Filter---</option>
+                    <option value="ALL">All</option>
+                    <option value="OLDEST">Oldest</option>
+                    <option value="NEWEST">Newest</option>
+                    <option value="POPULAR">Popular</option>
+                    <option value="PUPLISHED">Published</option>
+                    <option value="DRAFTS">Drafts</option>
+                </select>
             </div>
-        </div> 
+            <div class="table-buttons">
+                <a href="addblog.html" class="btn primary-btn small-btn">
+                    <ion-icon name="add-circle-outline" class="icon"></ion-icon>Add post
+                </a>
+
+
+            </div>
+        </div>
+        <div class="admin-table">
+
+            <table>
+
+                <thead>
+                    <th>SN</th>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Likes</th>
+                    <th>Publish</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Diane</td>
+                        <td><a href="readblog.html" target="_blank_">
+                            This is the first blog
+                            </a>
+                            <div class="td-action-links">
+                                <a href="#" class="trash">Delete</a>
+                                <span class="inline-divider">|</span>
+                                <a href="#" class="edit">Edit</a>
+                            </div>
+                        </td>
+                        <td>500</td>
+                        <td><a href="#">Publish</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Uwiduhaye</td>
+                        <td><a href="readblog.html" target="_blank_">
+                            This is the first blog
+                            </a>
+                            <div class="td-action-links">
+                            <a href="#" class="trash">Delete</a>
+                            <span class="inline-divider">|</span>
+                            <a href="#" class="edit">Edit</a>
+                            </div>
+                        </td>
+                        <td>300</td>
+                        <td><a href="#">Publish</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jane</td>
+                        <td><a href="readblog.html" target="_blank_">
+                            This is the first blog
+                            </a>
+                            <div class="td-action-links">
+                                <a href="#" class="trash">Delete</a>
+                                <span class="inline-divider">|</span>
+                                <a href="#" class="edit">Edit</a>
+                            </div>
+                        </td>
+                        <td>200</td>
+                        <td><a href="#">Publish</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>John</td>
+                        <td><a href="readblog.html" target="_blank_">
+                            This is the first blog
+                            </a>
+                            <div class="td-action-links">
+                                <a href="#" class="trash">Delete</a>
+                                <span class="inline-divider">|</span>
+                                <a href="#" class="edit">Edit</a>
+                            </div>
+                        </td>
+                        <td>100</td>
+                        <td><a href="#">Unpublish</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tylor</td>
+                        <td><a href="readblog.html" target="_blank_">
+                            This is the first blog
+                            </a>
+                            <div class="td-action-links">
+                                <a href="#" class="trash">Delete</a>
+                                <span class="inline-divider">|</span>
+                                <a href="#" class="edit">Edit</a>
+                            </div>
+                        </td>
+                        <td>450</td>
+                        <td><a href="#">Publish</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="5" style="border: 1px solid #BBEDEC">
+                        <div class="pagination-links">
+                            <a href="" class="link active">1</a>
+                            <a href="" class="link">2</a>
+                            <a href="" class="link">3</a>
+                            <a href="" class="link">4</a>
+                            <a href="" class="link">5</a>
+                            <a href="" class="link">6</a>
+                        </div>
+                    
+                    </td>
+                </tfoot>
+            </table>
+        </div>
+
         <footer class="manageblogs-footer">
             &COPY;2022 By DianeUwiduhaye
-          </footer>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+        <script>
+            //featured posts
+            const changeFeaturedPostBtn=document.querySelector('.change-featured-post');
+            const inputWrapper=document.querySelector('.input-wrapper');
+            const titleWrapper=document.querySelector('.title-wrapper');
+
+            changeFeaturedPostBtn.addEventListener('click',function(){
+                inputWrapper.classList.toggle('hide');
+                titleWrapper.classList.toggle('hide');
+            });
+
+        </script>  
     </body>
 </html>

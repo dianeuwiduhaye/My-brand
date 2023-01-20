@@ -50,67 +50,131 @@ header{
     font-size: 1rem;
     font-weight: bold;
 }
+.right-nav ul li a:hover{
+    text-decoration: underline;
+}
 /*manageblogs*/
-.main-mablogs{
+.page-content h1{
+    margin-left: 45%;
+    font-size: 2rem;
+    
+}
+hr{
+    border:1px solid azure;
+}
+.message{
+    margin-top: 10px;
+    padding: 10px 15px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-around;
+    border-radius: 2px;
+    border: #BBEDEC;
 }
-.add-new{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.message.success{
+    border: 1px solid green;
+    background-color:#11192E;
+    color: green;
+}
+.message.warning{
+    border: 1px solid yellow;
+    background-color:#11192E;
+    color: yellow;
+}
+.message.error{
+    border: 1px solid red;
+    background-color:#11192E;
+    color: red;
+}
+.message .message-icon{
+    font-size: 2rem;
+    margin-right: 15px;
 
 }
-.delete{
-    margin-left: 10px;
+
+.hide{
+    display: none;
 }
-.delete ul{
-    list-style: none;
-    text-decoration: none;
+.featured-post-form{
+    padding-top: 15px;
 }
-.delete ul li{
-    margin-top:50px;
-}
-.delete ul li a{
-    list-style: none;
-    text-decoration: none;
-    color: azure;
-    font-size: 1.5rem;
-}
-.delete .plus{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.edit{
-    margin-right: 100px;
-    margin-top: 110px;
-}
-.edit ul{
-    list-style: none;
-    text-decoration: none;
-}
-.edit ul li{
-    margin-top: 50px;
+.featured-post-form.input-control-sm{
+    max-width: 500px;
+    width: 100%;
+    margin:8px,0;
 
 }
-.edit ul li a {
-    list-style: none;
+
+.admin-table table {
+    width:100%;
+    background-color: #11192E ;
+    border-collapse: collapse;
+    border-spacing:0;
+    border: 1px solid#BBEDEC;
+    margin-top: 20px;
+}
+.admin-table table tr {
+    border-top: 1 px solid#BBEDEC;
+}
+.admin-table table th,.admin-table table td{
+    padding: 16px;
+    text-align: left;
+}
+.admin-table table td a{
     text-decoration: none;
-    color: azure;
-    font-size: 1.5rem;
-}
-.blog-list{
-    margin-top: 180px;
-}
-.blog-list p{
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    color: #6689B1;
+    color:azure
 
 }
-.blog-list small a{
-    text-decoration: none;
-    color:#6689B1 ;
+.admin-table table td a:hover{
+  text-decoration: underline;  
+}
+.admin-table table td .td-action-links .trash{
+    color:red;
+    
+}
+.admin-table table td .td-action-links .edit{
+    color:#BBEDEC
+    
+}
+.admin-table table td .td-action-links .inline-divider{
+   color:cadetblue;
+   margin:0,4px; 
+    
+}
+.admin-table table td .td-action-links{
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
+.table-actions{
+   display: flex; 
+   justify-content: space-between;
+   padding: 10px,0;
+   align-items: center;
+}
+.table-actions .table-filter-group{
+    border:1px solid #BBEDEC;
+
+}
+.table-actions{
+    flex-basis: 50%;
+    text-align: right;
+    border:1px solid azure;
+}
+
+/*pagination*/
+.admin-table .pagination-links {
+   display: flex; 
+   justify-content: flex-end;
+}
+.admin-table .pagination-links .link{
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 0.4rem 0.8rem;
+    min-width:40px;
+    border: 1px solid azure
+}
+.admin-table .pagination-links .link.active{
+    background-color: cadetblue;
+
+}
