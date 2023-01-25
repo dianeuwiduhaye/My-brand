@@ -7,11 +7,11 @@ body{
     color:azure;
     
 }
-.manageblogs-footer{
+.manageusers-footer{
 color:azure;
 text-align: center;
 position: fixed ;
-margin-top: 20vh;
+margin-top: 2vh;
 width: 100%;
 clear: both;
 }
@@ -63,8 +63,8 @@ hr{
     border:1px solid azure;
 }
 .message{
-    margin-top: 5px;
-    padding: 5px 10px;
+    margin-top: 10px;
+    padding: 10px 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -160,7 +160,6 @@ hr{
     flex-basis: 50%;
     text-align: right;
     border:1px solid azure;
-    
 }
 .table-actions .table-buttons{
     background-color: #BBEDEC;
@@ -177,10 +176,12 @@ hr{
     color: red;
     font-weight: bold;
     
+    
 }
 .table-actions .table-buttons a:hover{
     text-decoration: underline;
 }
+
 /*pagination*/
 .admin-table .pagination-links {
    display: flex; 
